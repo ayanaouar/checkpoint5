@@ -1,0 +1,15 @@
+.far {
+ color:red
+}
+
+.fas {
+    color: red;
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.pulse {
+    animation: pulse .5s;
+}

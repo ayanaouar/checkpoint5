@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>Shopping Cart</h1>
+<div class="table-wrapper">
+    <table class="fl-table" id="myTable">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Product image</th>
+            <th>Price</th>
+            <th>Add Product</th>
+            
+            <th>Like</th>
+            <th>Delete Row</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Pizza</td>
+            <td>&#127829</td>
+            <td class="number">10000</td>
+            
+            <td> 
+                <div id='main'>
+                    <button class="btnplus" >+</button>
+                    <span class='counter' >0</span>
+                    <button class="btnminus" >-</button>
+                </div>  
+            </td>
+            
+            <td>
+                <div class="container">
+                    <i class="far fa-heart js-heart heart"></i> 
+                </div>
+            </td>
+            <td>
+                <input type="button" value="Delete" onclick="deleteRow(this)">
+            </td>
+        
+        
+        </tr>
+        
+        
+        
+        <tr>
+            <td>Tomato</td>
+            <td>&#127813</td>
+            <td class="number">3000</td>
+            <td><div id='main'>
+            <button class="btnplus" >+</button>
+            <span class='counter' >0</span>
+            <button class="btnminus" >-</button>
+            </div></td>
+            <td><div class="container">
+                <i class="far fa-heart js-heart heart"></i> 
+            </div></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>&#127820</td>
+            <td class="number" >4500</td>
+            <td><div id='main'>
+            <button class="btnplus" >+</button>
+            <span class='counter' >0</span>
+            <button class="btnminus" >-</button>
+            </div></td>
+            <td><div class="container">
+                <i class="far fa-heart js-heart heart"></i> 
+            </div></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr id="number1">
+            <td>Grape</td>
+            <td>&#127815</td>
+            <td class="number">2500</td>
+            <td><div id='main'>
+            <button class="btnplus" >+</button>
+            <span class='counter' >0</span>
+            <button class="btnminus" >-</button>
+            </div></td>
+            <td><div class="container">
+                <i class="far fa-heart js-heart heart"></i> 
+            </div></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Hot Dog</td>
+            <td>&#127789</td>
+            <td class="number">5500</td>
+            <td
+            ><div id='main'>
+            <button class="btnplus" >+</button>
+            <span class='counter' >0</span>
+            <button class="btnminus" >-</button>
+            </div>
+            </td>
+            <td><div class="container">
+                    <i class="far fa-heart js-heart heart"></i> 
+                </div></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+
+        <tbody>
+    </table>
+                  </div>
+                  <div class="table-wrapper">
+                      
+                  
+                  <table class="fl-table" id="myTable">
+    <thead>
+        <tr>
+            <th>Total   </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span id='tot'>0 $</span></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<script src='script.js' ></script>
+</body>
+</html>
